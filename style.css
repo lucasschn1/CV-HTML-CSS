@@ -14,5 +14,146 @@
 }
 
 .esquerda{
-    background-color: darkgrey;
+    background-color: rgb(157, 219, 157);
+    flex: 0 0 35%;
+}
+
+.direita{
+    flex: 1;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    min-height: 100vh;
+    background-color: rgb(248, 248, 248);
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 210mm;
+    min-height: 297mm;
+    border: 2px solid #333;
+    display: flex;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border: 2px solid #333;
+}
+
+.profile-text{
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.profile-text h2{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.profile-text p{
+    text-align: center;
+    font-size: 1.2rem;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+.informacao-contato{
+    margin-top: 20px;
+    padding-top: 20px;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+}
+
+.informacao-contato .titulo{
+    font-size: 1.1rem;
+}
+
+.informacao-contato::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px; /* espessura da linha */
+    background: linear-gradient(
+        to right,
+        transparent,
+        #444444,
+        transparent
+    );
+}
+
+.informacao-contato ul{
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.informacao-contato li{
+    display: flex;
+    align-items: center;    
+    margin-bottom: 10px;
+}
+
+
+.informacao-contato .icone{
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 25px;
+}
+
+/* Este seletor SÓ afeta o h2 de "Idiomas" */
+.informacao-contato.idiomas h2 {
+  text-align: center; 
+  font-size: 1.1rem;
+}
+
+.idiomas .lista-idiomas{
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.idiomas .nome-idioma{
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+.idiomas .barra-fundo {
+  width: 80%;
+  height: 10px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  overflow: hidden;
+  align-self: center;
+}
+
+
+.idiomas .lista-idiomas li {
+  margin-bottom: 15px; /* Espaço entre as barras */
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.idiomas .barra-preenchimento {
+  height: 100%;
+  background-color: #197020;
+  border-radius: 4px;
+  width: 0; /* << A barra começa com 0 e a classe de nível define a largura */
+  
+  transition: width 0.5s ease;
+}
+
+.idiomas .nivel-80 {
+  width: 80%;
 }
