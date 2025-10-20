@@ -3,7 +3,7 @@
     height: 150px;
     border-radius: 50%;
     overflow: hidden;
-    margin: 0 auto;
+    margin: 25px auto 0;
 }
 
 .imagem img {
@@ -14,7 +14,7 @@
 }
 
 .esquerda{
-    background-color: rgb(157, 219, 157);
+    background-color: rgb(97, 165, 221);
     flex: 0 0 35%;
 }
 
@@ -101,13 +101,17 @@ body{
     display: flex;
     align-items: center;    
     margin-bottom: 10px;
+    gap: 20px;
+    padding-left: 20px;
 }
 
 
 .informacao-contato .icone{
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 0;
+    margin-left: 0;
     width: 25px;
+    color: rgb(24, 88, 88);
+    flex-shrink: 0;
 }
 
 /* Este seletor SÓ afeta o h2 de "Idiomas" */
@@ -125,8 +129,9 @@ body{
 
 .idiomas .nome-idioma{
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     margin-left: 30px;
+    margin-top: 5px;
 }
 
 .idiomas .barra-fundo {
@@ -147,7 +152,7 @@ body{
 
 .idiomas .barra-preenchimento {
   height: 100%;
-  background-color: #197020;
+  background-color: #0e4cbe;
   border-radius: 4px;
   width: 0; /* << A barra começa com 0 e a classe de nível define a largura */
   
@@ -156,4 +161,30 @@ body{
 
 .idiomas .nivel-80 {
   width: 80%;
+}
+
+.educacao li h5,
+.educacao li h4,
+.educacao li p{
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+
+/* Regra principal para os itens da lista de educação */
+.educacao li {
+    flex-direction: column; /* Empilha verticalmente */
+    align-items: center;   /* Centraliza o bloco */
+    gap: 5px;              /* << NOVO: Espaço vertical igual de 5px */
+    padding-left: 0;       /* << IMPORTANTE: Reseta o padding herdado */
+    margin-bottom: 15px;
+}
+
+.educacao li h5,
+.educacao li h4,
+.educacao li p{
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
