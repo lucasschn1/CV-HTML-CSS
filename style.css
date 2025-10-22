@@ -239,3 +239,14 @@ body{
 .nivel-50 { width: 50%; }
 .nivel-70 { width: 70%; }
 .nivel-90 { width: 90%; }
+
+.experiencia h4{
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.experiencia h5{
+    margin-bottom: 0;
+    font-style: italic;
+    font-weight: 500;
+}
