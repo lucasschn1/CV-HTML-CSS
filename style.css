@@ -20,15 +20,14 @@
     color: #1b1b1b;
     display: flex;
     flex-direction: column;
-    gap: 10px;
     box-sizing: border-box;
     min-width: 0px;
     overflow: hidden;
+    padding-left: 20px;
+    padding-right: 20px;;
+    
 }
 
-.esquerda > div{
-    margin-right: 20px;
-}
 
 .esquerda * {
     max-width: 100%;
@@ -66,11 +65,6 @@ body{
     border: 2px solid #8b8b8b;
 }
 
-.profile-text{
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
 .profile-text h2{
     text-align: center;
     font-size: 1.5rem;
@@ -84,11 +78,7 @@ body{
 }
 
 .informacao-contato{
-    margin-top: 20px;
-    padding-top: 20px;
     text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
     position: relative;
 }
 
@@ -102,23 +92,19 @@ body{
 
 .informacao-contato ul{
     list-style-type: none;
-    padding-left: 0;
-    margin: 0;
     text-align: left;
+    padding-left: 0px;
 }
 
 .informacao-contato li{
     display: flex;
-    align-items: center;    
-    margin-bottom: 10px;
-    gap: 7px;
-    padding-left: 20px;
+    align-items: left;
+    padding-top: 12px;
+    padding-left: 4%;
 }
 
 
 .informacao-contato .icone{
-    margin-right: 0;
-    margin-left: 0;
     width: 25px;
     color:#101204;
     flex-shrink: 0;
@@ -142,8 +128,6 @@ body{
     display: block;
     margin-bottom: 0px;
     margin-left: 2px;
-    margin-top: 0px;
-    margin-top: 0px;
 }
 
 .idiomas .barra-fundo {
@@ -153,7 +137,6 @@ body{
   border-radius: 8px;
   overflow: hidden;
   align-self: center;
-  margin-top: 0px;
 }
 
 
@@ -182,38 +165,31 @@ body{
     width: 100%;
 }
 
-.educacao li h5,
-.educacao li h4,
-.educacao li p{
-    margin: 0;
-    padding: 5px;
-}
-
 
 /* Regra principal para os itens da lista de educação */
 .educacao li {
     display: flex;
     flex-direction: column; /* Empilha verticalmente */
     align-items: flex-start; /* Alinha o conteúdo à esquerda */
-    gap: 5px;
-    padding-left: 20px; /* Espaçamento interno à esquerda */
-    margin-bottom: 15px;
     text-align: left; /* Garante alinhamento de texto à esquerda */
 }
 
 .educacao h4{
     font-size: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .educacao h5{
     font-weight: normal;
     font-style: italic;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .informacao-contato a {
     font-size: 14px;
     color: rgb(0, 0, 0);
-    text-decoration: none;
     transition: color 0.3s, transform 0.3s;
 }
 
@@ -221,3 +197,45 @@ body{
     color: rgb(210, 252, 208);
     transform: scale(1.1); /* aumenta levemente */
 }
+
+.direita{
+    padding-left: 20px;
+    padding-right: 35px;
+}
+
+
+.perfil li{
+    list-style: none;
+    text-align: justify;   /* texto justificado */
+    width: 100%;            /* controla a largura do bloco */
+    margin: 0 auto;        /* centraliza o bloco */  
+}
+
+.sobre{
+    text-align: left;
+}
+
+.Nivel-hablidades {
+  width: 100%;
+  max-width: 400px; /* largura máxima do bloco */
+  margin: 10px auto;
+}
+
+.barra-fundo {
+  background-color: #ddd;     /* cor de fundo da barra */
+  border-radius: 10px;
+  overflow: hidden;           /* impede o preenchimento de sair das bordas */
+  height: 15px;
+}
+
+.barra-preencimento {
+  height: 100%;
+  background-color: #4CAF50;  /* cor da barra de preenchimento */
+  border-radius: 10px 0 0 10px;
+  transition: width 0.6s ease; /* animação suave */
+}
+
+/* Exemplo de níveis */
+.nivel-50 { width: 50%; }
+.nivel-70 { width: 70%; }
+.nivel-90 { width: 90%; }
