@@ -110,7 +110,7 @@ body{
     flex-shrink: 0;
 }
 
-/* Este seletor SÓ afeta o h2 de "Idiomas" */
+
 .informacao-contato.idiomas h2 {
   text-align: center; 
   font-size: 1.1rem;
@@ -141,7 +141,7 @@ body{
 
 
 .idiomas .lista-idiomas li {
-  margin-bottom: 10px; /* Espaço entre as barras */
+  margin-bottom: 10px; 
   flex-direction: column;
   align-items: stretch;
   padding-top: 0px;
@@ -152,7 +152,7 @@ body{
   height: 100%;
   background-color: #24270d;
   border-radius: 4px;
-  width: 0; /* << A barra começa com 0 e a classe de nível define a largura */
+  width: 0; 
   
   transition: width 0.5s ease;
 }
@@ -169,9 +169,9 @@ body{
 /* Regra principal para os itens da lista de educação */
 .educacao li {
     display: flex;
-    flex-direction: column; /* Empilha verticalmente */
-    align-items: flex-start; /* Alinha o conteúdo à esquerda */
-    text-align: left; /* Garante alinhamento de texto à esquerda */
+    flex-direction: column; 
+    align-items: flex-start; 
+    text-align: left; 
 }
 
 .educacao h4{
@@ -207,8 +207,8 @@ body{
 .perfil li{
     list-style: none;
     text-align: justify;   /* texto justificado */
-    width: 100%;            /* controla a largura do bloco */
-    margin: 0 auto;        /* centraliza o bloco */  
+    width: 100%;            
+    margin: 0 auto;         
 }
 
 .sobre{
@@ -221,21 +221,22 @@ body{
   margin: 10px auto;
 }
 
+/*
 .barra-fundo {
-  background-color: #ddd;     /* cor de fundo da barra */
+  background-color: #ddd;   
   border-radius: 10px;
-  overflow: hidden;           /* impede o preenchimento de sair das bordas */
+  overflow: hidden;           
   height: 15px;
 }
 
 .barra-preencimento {
   height: 100%;
-  background-color: #4CAF50;  /* cor da barra de preenchimento */
+  background-color: #4CAF50;  
   border-radius: 10px 0 0 10px;
-  transition: width 0.6s ease; /* animação suave */
+  transition: width 0.6s ease; 
 }
 
-/* Exemplo de níveis */
+ 
 .nivel-50 { width: 50%; }
 .nivel-70 { width: 70%; }
 .nivel-90 { width: 90%; }
@@ -250,3 +251,4 @@ body{
     font-style: italic;
     font-weight: 500;
 }
+*/
