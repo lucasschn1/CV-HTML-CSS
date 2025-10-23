@@ -17,3 +17,6 @@ Este é meu currículo em formato web, criado com HTML, CSS e Font Awesome.
 - HTML5
 - CSS3
 - Font Awesome (para ícones)
+
+
+![image alt](https://github.com/lucasschn1/CV-HTML-CSS/blob/5a25db3ec6f67d5fcc4af006d9a0e8fe80c2e359/cv.png)
